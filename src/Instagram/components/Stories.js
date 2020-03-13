@@ -2,7 +2,6 @@ import React from 'react';
 import stories from '../assets/data/stories.json';
 
 export const Stories = () => {
-
     const Story = (props) => {
         return props.message ? (
             <div className = 'story'>
