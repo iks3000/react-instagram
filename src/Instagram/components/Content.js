@@ -2,6 +2,8 @@ import React from 'react';
 import avatar from '../assets/images/nasa.jpg';
 import images from '../assets/data/images.json';
 
+import { Stories } from './Stories';
+
 export const Content = () => {
     const imagesJSX = images.map((image) => {
         return (
@@ -34,6 +36,9 @@ export const Content = () => {
                     </div>
                     <span className = 'name'>NASA</span>
                 </div>
+
+                <Stories/>
+
             </div>
             <div className = 'images'>
                 {imagesJSX}
