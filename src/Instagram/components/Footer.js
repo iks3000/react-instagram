@@ -15,7 +15,7 @@ export const Footer = () => {
             <ul>
                 {linksJSX}
             </ul>
-            <span>© {(new Date().getFullYear())} INSTAGRAM FROM FACEBOOK</span>
+            <span>&copy; {(new Date().getFullYear())} INSTAGRAM FROM FACEBOOK</span>
         </section>
     );
 };

@@ -1,18 +1,9 @@
 import React from 'react';
 import stories from '../assets/data/stories.json';
 
-export const Stories = () => {
-    const Story = (props) => {
-        return props.message ? (
-            <div className = 'story'>
-                <div>
-                    <img src = { props.src } />
-                </div>
-                <span>{props.message}</span>
-            </div>
-        ) : null;
-    };
+import { Story } from './Story';
 
+export const Stories = () => {
     const storiesJSX = stories.map((story) => {
         return (
             <Story
@@ -25,3 +16,5 @@ export const Stories = () => {
 
     return <div className = 'stories'>{storiesJSX}</div>;
 };
+
+export default Stories;

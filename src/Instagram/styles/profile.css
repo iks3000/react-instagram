@@ -1,11 +1,11 @@
+
 .profile {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     margin: 0 auto;
     max-width: 930px;
-    border-bottom: 1px solid var(--paletteColor6);
-    padding: 50px 0;
+    padding: 50px 0 0px;
 
     & .avatar {
         box-sizing: content-box;
@@ -27,12 +27,13 @@
 
     & .main {
         padding-top: 12px;
+        width: 65%;
 
         & .nickname {
             display: flex;
             margin-bottom: 24px;
-            font-size: 28px;
-            font-weight: 300;
+            font-size: 32px;
+            font-weight: 200;
 
             &:after {
                 display: block;
@@ -47,7 +48,7 @@
 
         & .stats {
             display: flex;
-            margin-bottom: 23px;
+            margin-bottom: 26px;
 
             & div {
                 &:not(:last-child) {
@@ -69,6 +70,11 @@
             font-size: 16px;
             font-weight: 600;
             line-height: 1;
+            margin-bottom: 10px;
+        }
+
+        & p {
+            line-height: 1.2;
         }
     }
 
